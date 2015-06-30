@@ -27,20 +27,5 @@ html {
 }
 
 </style>
-<script>
-window.onload=function(){
-if(navigator.geolocation)
-{
-navigator.geolocation.getCurrentPosition(showPosition);
-}
-else
-{
-alert("Geolocation is not supported by this browser.");
-}
-}
-function showPosition(pos){
-window.location.href="http://showevent.zz.mu/a.php?lat="+pos.coords.latitude+"&&long="+pos.coords.longitude;
-}
-</script>
 </body>
 </html>
